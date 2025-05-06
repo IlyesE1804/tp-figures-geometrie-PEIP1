@@ -1,7 +1,7 @@
 CXX = g++
 CXXFLAGS = -std=c++23 -Iinclude
 LDFLAGS = -lgdi32 -luser32
-SRC = src/*.cpp src/shapes/*.cpp main.cpp
+SRC = src/draw.cpp src/point.cpp src/shapes/circle.cpp src/shapes/square.cpp src/shapes/triangle.cpp main.cpp
 
 .PHONY: all clean
 
