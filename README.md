@@ -24,6 +24,21 @@ Projet réalisé dans le cadre du TP d'informatique.
   - Nom2 : forme carré
   - etc.
 
+## Commande pour cloner le dossier du dépôt GitHub
+
+git clone https://github.com/IlyesE1804/tp-figures-geometrie-PEIP1
+cd tp-figures-geometrie-PEIP1
+
+
+## Pour modifier le dépot sur github (partir du dossier)
+
+## Exemple : J'ai modifier les ficheirs cercle.h et cercle .hpp je fais :
+
+git add .
+git commit -m "Implémentation de la classe Cercle"
+git push origin main
+
+
 ## Compilation
 
 ```bash
