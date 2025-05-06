@@ -7,6 +7,10 @@
 #define _USE_MATH_DEFINES
 #include <cmath>
 
+//Commande pour créer un executable test.exe :
+//g++ -std=c++23 -Iinclude -o test ../src/draw.cpp ../src/point.cpp ../src/shapes/circle.cpp ../src/shapes/square.cpp ../src/shapes/triangle.cpp tests.cpp -lgdi32 -luser32
+
+
 int main() {
     // Test Cercle
     Circle c(5.0, Point(0, 0));
