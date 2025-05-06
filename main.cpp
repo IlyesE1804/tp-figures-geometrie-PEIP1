@@ -2,6 +2,8 @@
 #include "point.hpp"
 #include "shapes.hpp"
 #include <vector>
+#include <iostream>
+using namespace std;
 
 
 int main() {
@@ -18,6 +20,6 @@ int main() {
 	
 	// Draw the picture by connecting the points
 	draw_picture(points);
-	
+
 	return 0;
 }

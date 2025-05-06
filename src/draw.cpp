@@ -1,6 +1,6 @@
-#include "draw.hpp"
-#include "point.hpp"
-#include "CTurtle.hpp"
+#include "../include/draw.hpp"
+#include "../include/point.hpp"
+#include "../include/CTurtle.hpp"
 #include <vector>
 
 namespace ct = cturtle;
