@@ -29,7 +29,7 @@ Projet réalisé dans le cadre du TP d'informatique.
 ```bash
 git clone https://github.com/IlyesE1804/tp-figures-geometrie-PEIP1
 cd tp-figures-geometrie-PEIP1
-
+```
 
 ## Pour modifier le dépot sur github (partir du dossier)
 
@@ -39,7 +39,7 @@ cd tp-figures-geometrie-PEIP1
 git add .
 git commit -m "Implémentation de la classe Cercle"
 git push origin main
-
+```
 
 ## Compilation
 
