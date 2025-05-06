@@ -1,7 +1,7 @@
 #ifndef SQUARE_HPP
 #define SQUARE_HPP
 
-#include "point.hpp"
+#include "../point.hpp"
 #include "circle.hpp"
 
 struct Square {

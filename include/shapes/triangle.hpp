@@ -1,7 +1,7 @@
 #ifndef TRIANGLE_HPP
 #define TRIANGLE_HPP
 
-#include "point.hpp"
+#include "../point.hpp"
 #include "circle.hpp"
 
 struct Triangle {

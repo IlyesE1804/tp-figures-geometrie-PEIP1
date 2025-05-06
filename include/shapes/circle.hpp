@@ -1,7 +1,7 @@
 #ifndef CIRCLE_HPP
 #define CIRCLE_HPP
 
-#include "point.hpp"
+#include "../point.hpp"
 
 struct Circle {
 	double radius;

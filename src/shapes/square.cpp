@@ -1,5 +1,5 @@
-#include "point.hpp"
-#include "shapes/square.hpp"
+#include "../../include\point.hpp"
+#include "../../include/shapes/square.hpp"
 using namespace std;
 #include <cmath>
 

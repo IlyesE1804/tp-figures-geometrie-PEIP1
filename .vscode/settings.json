@@ -16,6 +16,8 @@
     "cstdint": "cpp",
     "cstdio": "cpp",
     "cstdlib": "cpp",
-    "cstring": "cpp"
+    "cstring": "cpp",
+    "iostream": "cpp",
+    "cassert": "cpp"
   }
 }

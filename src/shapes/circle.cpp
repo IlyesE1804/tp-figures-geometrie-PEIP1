@@ -1,5 +1,5 @@
-#include "point.hpp"
-#include "shapes/circle.hpp"
+#include "../../include\point.hpp"
+#include "../../include/shapes/circle.hpp"
 #include "../../include/CTurtle.hpp"
 #include "../../include/draw.hpp"
 #define _USE_MATH_DEFINES

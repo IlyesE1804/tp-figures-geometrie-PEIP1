@@ -3,6 +3,9 @@
 #include "../include/shapes/triangle.hpp"
 #include <iostream>
 #include <cassert>
+#include <vector>
+#define _USE_MATH_DEFINES
+#include <cmath>
 
 int main() {
     // Test Cercle
