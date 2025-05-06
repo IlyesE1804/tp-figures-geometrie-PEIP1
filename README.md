@@ -26,6 +26,7 @@ Projet réalisé dans le cadre du TP d'informatique.
 
 ## Commande pour cloner le dossier du dépôt GitHub
 
+```bash
 git clone https://github.com/IlyesE1804/tp-figures-geometrie-PEIP1
 cd tp-figures-geometrie-PEIP1
 
@@ -34,6 +35,7 @@ cd tp-figures-geometrie-PEIP1
 
 ## Exemple : J'ai modifier les ficheirs cercle.h et cercle .hpp je fais :
 
+```bash
 git add .
 git commit -m "Implémentation de la classe Cercle"
 git push origin main
