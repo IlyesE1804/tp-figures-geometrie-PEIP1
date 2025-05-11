@@ -25,7 +25,7 @@ struct Square {
 	
 	void rotate(double angle); // rotate counterclockwise around the center of the square  
 	
-	bool equals(Square square);
+	bool equals(Square square);    //Poser question concernant les types d'égalitées d'un carré
 	
 	Circle inscribedCircle();
 	

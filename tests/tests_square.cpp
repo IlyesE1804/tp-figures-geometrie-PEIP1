@@ -68,6 +68,19 @@ void test_resize() {
     std::cout << "test_resize passed\n";
 }
 
+void test_rotate() {
+    Square s({0, 0}, {10, 10});
+
+    s.rotate(90);
+
+    // Vérification des nouveaux coins (après une rotation de 90°)
+    assert(s.A.x == 10 && s.A.y == 0);  // Nouveau A
+    assert(s.C.x == 0 && s.C.y == 10);  // Nouveau C
+
+    std::cout << "test_rotate passed\n";
+}
+
+
 
 int main() {
     test_side();
@@ -77,8 +90,10 @@ int main() {
     test_draw();
     test_translate();
     test_resize();
+    test_rotate();
 
     std::cout << "\n Tous les tests du carré sont passés.\n";
     return 0;
 }
+
 
