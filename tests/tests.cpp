@@ -34,7 +34,7 @@ int main() {
     assert(c.equals(c2)==false);
     assert(c.equals(c3)==true);
 
-    std::cout << "Tous les tests simples ont réussi avec succès. " << std::endl;
+    std::cout << "Tous les tests simples du cercle ont réussi avec succès. " << std::endl;
 
 
         //Cas limites !!!!!!
@@ -60,6 +60,9 @@ int main() {
 
     //Circle crayon_negatif(-5, Point(1,1));
 
-    std::cout << "Tous les tests limites ont réussi avec succès. " << std::endl;
+    std::cout << "Tous les tests limites du cercle ont réussi avec succès. " << std::endl;
+
+
+    
     return 0;
 }

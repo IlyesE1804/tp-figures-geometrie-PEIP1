@@ -23,7 +23,7 @@ struct Square {
 	
 	void resize(double ratio); // resize while maintaining center
 	
-	void rotate(double angle); // rotate counterclockwise around the center of the triangle 
+	void rotate(double angle); // rotate counterclockwise around the center of the square  
 	
 	bool equals(Square square);
 	
