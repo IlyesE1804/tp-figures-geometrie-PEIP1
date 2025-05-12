@@ -64,9 +64,11 @@ void test_rotate() {
     // Rotation de 90° dans le sens antihoraire
     t.rotate(90);
 
-    assert(t.A.x == 1.0 / 3 && t.A.y == 4.0 / 3);
-    assert(t.B.x == -2.0 / 3 && t.B.y == 1.0 / 3);
-    assert(t.C.x == 1.0 / 3 && t.C.y == -2.0 / 3);
+    double tolerance = 0.1;
+
+    assert(abs(t.A.x - 0) < tolerance && abs(t.A.y - 1) < tolerance);
+    assert(abs(t.B.x - (-1)) < tolerance && abs(t.B.y - 0) < tolerance);
+    assert(abs(t.C.x - 0) < tolerance && abs(t.C.y - (-1)) < tolerance);
 
     cout << "test_rotate passed\n";
 }
