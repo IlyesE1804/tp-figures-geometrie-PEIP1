@@ -32,7 +32,8 @@ Point Triangle::center() {
 }
 
 void Triangle::draw() {
-    
+    vector<Point> points = {A, B, C, A}; 
+    draw_picture(points);
 }
 
 void Triangle::translate(Point T) {
@@ -55,6 +56,29 @@ void Triangle::resize(double ratio) {
 }
 
 void Triangle::rotate(double angle) {
-    
-    };
+    // Convertir l'angle en radians
+    double radian = angle * M_PI / 180.0;
+
+    Point centre = center();
+
+    //On soustrait d'abord les coordonnées du centre à celles du coin A 
+    //pour obtenir les coordonnées du point relatives au centre.
+    double xA = A.x - centre.x;
+    double yA = A.y - centre.y;
+
+    // Appliquer la rotation au coin A sachant que l'on connait la matrice de rotation vu en cours
+    // de maths qui est ( cos(teta), -sin(teta) )
+    //                  ( sin(teta),  cos(teta) )
+
+    A.x = xA * cos(radian) - yA * sin(radian) + centre.x;
+    A.y = xA * sin(radian) + yA * cos(radian) + centre.y;
+
+    // Appliquer la rotation au coin C...
+    double xC = C.x - centre.x;
+    double yC = C.y - centre.y;
+
+    C.x = xC * cos(radian) - yC * sin(radian) + centre.x;
+    C.y = xC * sin(radian) + yC * cos(radian) + centre.y;
+
+};
 
