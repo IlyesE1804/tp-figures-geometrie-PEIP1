@@ -122,7 +122,7 @@ int main() {
     test_inscribedCircle();
     test_circumscribedCircle();
 
-    std::cout << "\n Tous les tests du carré sont passés.\n";
+    cout << "\n Tous les tests du carré sont passés.\n";
     return 0;
 }
 
