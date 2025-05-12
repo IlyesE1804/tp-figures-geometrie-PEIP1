@@ -66,6 +66,6 @@ void Circle::resize(double ratio)
 
 bool Circle::equals(Circle circle) 
 {
-    return (radius == circle.radius && center.x == circle.center.x   && center.y == circle.center.y );
+    return (radius == circle.radius && center.x == circle.center.x   && center.y == circle.center.y ); 
 }
-
+//to do integrer l'erreur de precision du equals
