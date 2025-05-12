@@ -100,3 +100,22 @@ void Square::rotate(double angle)
     C.x = xC * cos(radian) - yC * sin(radian) + centre.x;
     C.y = xC * sin(radian) + yC * cos(radian) + centre.y;
 }
+
+
+
+
+Circle Square::inscribedCircle()
+{
+    Point centre = center();
+    double radius = side()/2;
+    Circle inscribed_Cercle = {radius, centre};
+    return inscribed_Cercle;
+}
+
+Circle Square::circumscribedCircle()
+{
+    Point centre = center();
+    double radius = (sqrt(pow(C.x - A.x,2) + pow(C.y - A.y,2)))/2;
+    Circle circumscribed_Cercle = {radius, centre};
+    return circumscribed_Cercle;
+}

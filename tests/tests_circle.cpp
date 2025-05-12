@@ -6,9 +6,10 @@
 #include <vector>
 #define _USE_MATH_DEFINES
 #include <cmath>
+using namespace std;
 
 //Commande pour créer un executable test.exe :
-//g++ -std=c++23 -Iinclude -o test ../src/draw.cpp ../src/point.cpp ../src/shapes/circle.cpp ../src/shapes/square.cpp ../src/shapes/triangle.cpp tests.cpp -lgdi32 -luser32
+//g++ -std=c++23 -Iinclude -o tests_circle ../src/draw.cpp ../src/point.cpp ../src/shapes/circle.cpp ../src/shapes/square.cpp ../src/shapes/triangle.cpp tests_circle.cpp -lgdi32 -luser32
 
 
 int main() {
@@ -34,7 +35,7 @@ int main() {
     assert(c.equals(c2)==false);
     assert(c.equals(c3)==true);
 
-    std::cout << "Tous les tests simples du cercle ont réussi avec succès. " << std::endl;
+    cout << "Tous les tests simples du cercle ont réussi avec succès. " << std::endl;
 
 
         //Cas limites !!!!!!
@@ -60,7 +61,7 @@ int main() {
 
     //Circle crayon_negatif(-5, Point(1,1));
 
-    std::cout << "Tous les tests limites du cercle ont réussi avec succès. " << std::endl;
+    cout << "Tous les tests limites du cercle ont réussi avec succès. " << std::endl;
 
 
     
