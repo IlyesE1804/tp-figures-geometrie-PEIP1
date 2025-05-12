@@ -101,8 +101,25 @@ void Square::rotate(double angle)
     C.y = xC * sin(radian) + yC * cos(radian) + centre.y;
 }
 
+bool Square::equals(Square square){
+    if(A.x==square.C.x && A.y==square.C.y && C.x==square.A.x && C.y==square.A.y){
+        return true;
+    }
 
-
+    else if(A.x==square.A.x && A.y==square.A.y && C.x==square.C.x && C.y==square.C.y){
+        return true;
+    }
+    //On vérifie que les points A et C du carré à comparé sont les meme que la carré de base.
+    else if(square.A.x==A.x && square.A.y==C.y && square.C.x==C.x && square.C.y==A.y){
+        return true;
+    }
+    else if(square.A.x==C.x && square.A.y==A.y && square.C.x==A.x && square.C.y==C.y){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
 
 Circle Square::inscribedCircle()
 {
