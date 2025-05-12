@@ -28,7 +28,11 @@ Projet réalisé dans le cadre du TP d'informatique numérique de spécialité e
 
 ```bash
 git clone https://github.com/IlyesE1804/tp-figures-geometrie-PEIP1
-cd tp-figures-geometrie-PEIP1
+```
+## Commande pour récupérer un dépôt modifier sur GitHub
+
+```bash
+git pull origin main
 ```
 
 ## Pour modifier le dépot sur github (partir du dossier)
