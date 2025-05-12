@@ -91,3 +91,18 @@ void Triangle::rotate(double angle) {
 
 };
 
+    bool Triangle::isEquilateral() {
+    double AB = sqrt((B.x - A.x)*(B.x - A.x) + (B.y - A.y)*(B.y - A.y));
+    double BC = sqrt((C.x - B.x)*(C.x - B.x) + (C.y - B.y)*(C.y - B.y));
+    double CA = sqrt((A.x - C.x)*(A.x - C.x) + (A.y - C.y)*(A.y - C.y));
+
+    return AB == BC && BC == CA;
+}
+
+bool Triangle::isIsoceles() {
+    double AB = sqrt((B.x - A.x)*(B.x - A.x) + (B.y - A.y)*(B.y - A.y));
+    double BC = sqrt((C.x - B.x)*(C.x - B.x) + (C.y - B.y)*(C.y - B.y));
+    double CA = sqrt((A.x - C.x)*(A.x - C.x) + (A.y - C.y)*(A.y - C.y));
+
+    return AB == BC || BC == CA || CA == AB;
+}
