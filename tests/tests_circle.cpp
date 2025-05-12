@@ -9,14 +9,14 @@
 using namespace std;
 
 //Commande pour créer un executable test.exe :
-//g++ -std=c++23 -Iinclude -o tests_circle ../src/draw.cpp ../src/point.cpp ../src/shapes/circle.cpp ../src/shapes/square.cpp ../src/shapes/triangle.cpp tests_circle.cpp -lgdi32 -luser32
+//
 
 
 int main() {
     // Test Cercle
 
        // Cas simples
-    Circle c(5.0, Point(0, 0));
+    Circle c(25.0, Point(0, 0));
 
     assert(c.circumference() == 2 * M_PI * c.radius);
     assert(c.area() == M_PI * pow(c.radius,2));

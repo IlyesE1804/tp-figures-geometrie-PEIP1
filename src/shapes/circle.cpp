@@ -30,19 +30,24 @@ double Circle::area()
     double aire = M_PI * pow(radius,2);
     return aire;
 }
-void Circle::draw() {
-    const int num_points = 10000;
+void Circle::draw()
+{
     vector<Point> points;
+    int num_points = 150;
 
-    for (int i = 0; i < num_points; ++i) {
-        double angle = 2 * M_PI * i / num_points;
-        int x = static_cast<int>(center.x + radius * cos(angle));
-        int y = static_cast<int>(center.y + radius * sin(angle));
+    for (int i = 0; i < num_points; i++)
+    {
+        double angle = (2 * 3.14 * i) / num_points;
+        double x = radius * cos(angle) + center.x;
+        double y = radius * sin(angle) + center.y;
+
         points.push_back(Point(x, y));
     }
 
     draw_picture(points);
 }
+
+
 
 void Circle::translate(Point T) 
 {
