@@ -73,6 +73,15 @@ void Triangle::rotate(double angle) {
     A.x = xA * cos(radian) - yA * sin(radian) + centre.x;
     A.y = xA * sin(radian) + yA * cos(radian) + centre.y;
 
+    
+    // Appliquer la rotation au coin B...
+    double xB = B.x - centre.x;
+    double yB = B.y - centre.y;
+
+    B.x = xB * cos(radian) - yB * sin(radian) + centre.x;
+    B.y = xB * sin(radian) + yB * cos(radian) + centre.y;
+    
+    
     // Appliquer la rotation au coin C...
     double xC = C.x - centre.x;
     double yC = C.y - centre.y;
