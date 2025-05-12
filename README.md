@@ -1,9 +1,9 @@
 # tp-figures-geometrie-PEIP1
-Projet de groupe consistant à réaliser des figures géométriques à l'aide d'un turtle c++
+Projet de groupe consistant à réaliser des figures géométriques à l'aide d'un turtle version c++
 
 # TP - Figures Géométriques (C++)
 
-Projet réalisé dans le cadre du TP d'informatique.
+Projet réalisé dans le cadre du TP d'informatique numérique de spécialité en PEIP 1 à Polytech Paris-Saclay.
 
 ## Structure
 
@@ -15,14 +15,14 @@ Projet réalisé dans le cadre du TP d'informatique.
 
 ## Organisation
 
-- Chef de projet : [Ton Nom]
+- Chef de projet : [Ilyes ECHAOUI]
   - Création du dépôt
-  - Écriture des tests
+  - Écriture des tests (et de certaines méthodes concerant les figures)
   - Suivi des contributions
 - Collaborateurs :
-  - Nom1 : forme cercle
-  - Nom2 : forme carré
-  - etc.
+  - Reda BOULARBAH : forme cercle
+  - Berson BOUKONO : forme carré
+  - la forme triangle a été travaillé un peu par tout le monde
 
 ## Commande pour cloner le dossier du dépôt GitHub
 
